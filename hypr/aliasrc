@@ -1,0 +1,50 @@
+# Removing docker and rails aliases
+unalias d
+unalias r
+
+# Removing git aliases
+unalias g
+unalias gcm
+unalias gcam
+unalias gcad
+
+# My aliases
+
+alias \
+    brc='source ~/.bashrc' \
+    logout='hyprctl dispatch exit' \
+
+# My navigation aliases
+alias \
+    docs='cd ~/Documents' \
+    repos='cd ~/Documents/Repos' \
+    tlf='cd ~/Documents/Repos/dags-airflow-telefonica' \
+    personal='cd ~/Documents/Personal' \
+    downl='cd ~/Downloads' \
+    famvq='cd /media/famvq' \
+    nvc='cd ~/.config/nvim' \
+    b='cd -' \
+    h='cd ~' \
+
+# Setup bashrc
+alias \
+    balias.e='nvim ~/.bashrc.d/aliasrc' \
+    benv.e='nvim ~/.bashrc.d/envrc' \
+
+# Home server
+alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
+
+# Python
+alias activate='source .venv/bin/activate'
+
+# Get some help...
+
+alias gethelp="echo 'Stop it, get some help'"
+alias \
+    :wq=gethelp \
+    :q=gethelp \
+    :w=gethelp \
+    :wa=gethelp \
+    :qa=gethelp \
+    :qall=gethelp \
+    :wqa=gethelp \
