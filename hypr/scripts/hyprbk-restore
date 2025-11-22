@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+
+BACKUP_DIR="$HOME/.config/backup/"
+
+cd $BACKUP_DIR
+git pull
+
+rsync -av --delete "$BACKUP_DIR/hypr/" "$HOME/.config/hypr/"
+rsync -av --delete "$BACKUP_DIR/waybar/" "$HOME/.config/waybar/"
