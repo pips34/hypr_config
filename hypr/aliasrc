@@ -21,15 +21,24 @@ alias \
     tlf='cd ~/Documents/Repos/dags-airflow-telefonica' \
     personal='cd ~/Documents/Personal' \
     downl='cd ~/Downloads' \
-    famvq='cd /media/famvq' \
     nvc='cd ~/.config/nvim' \
     b='cd -' \
     h='cd ~' \
+    ..='cd ..' \
+    ...='cd ../..' \
+
+# Home server paths
+alias \
+    famvq='cd /media/famvq' \
+    f='cd /media/famvq/Felipe' \
+    movies='cd /media/famvq/Movies' \
+    shows='cd /media/famvq/Shows' \
+    videos='cd /media/famvq/Videos' \
 
 # Setup bashrc
 alias \
-    balias.e='nvim ~/.bashrc.d/aliasrc' \
-    benv.e='nvim ~/.bashrc.d/envrc' \
+    balias.e='nvim ~/.config/hypr/aliasrc' \
+    benv.e='nvim ~/.config/hypr/envs.conf' \
 
 # Home server
 alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
