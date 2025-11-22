@@ -26,3 +26,6 @@ if [[ -n "$PROMPT_COMMAND" ]]; then
 else
     PROMPT_COMMAND="__venv_fix_prompt"
 fi
+
+# Adds my scripts folder to path
+export PATH="$HOME/.config/hypr/scripts:$PATH"
