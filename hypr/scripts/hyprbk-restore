@@ -8,3 +8,4 @@ git pull
 
 rsync -av --delete "$BACKUP_DIR/hypr/" "$HOME/.config/hypr/"
 rsync -av --delete "$BACKUP_DIR/waybar/" "$HOME/.config/waybar/"
+rsync -av --delete "$BACKUP_DIR/walker/" "$HOME/.config/walker/"
