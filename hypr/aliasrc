@@ -9,10 +9,10 @@ unalias gcam
 unalias gcad
 
 # My aliases
-
 alias \
     brc='source ~/.bashrc' \
     logout='hyprctl dispatch exit' \
+    cls='clear' \
 
 # My navigation aliases
 alias \
