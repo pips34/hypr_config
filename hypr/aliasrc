@@ -40,6 +40,8 @@ alias \
     balias.e='nvim ~/.config/hypr/aliasrc' \
     benv.e='nvim ~/.config/hypr/envs.conf' \
     nvimrc='nvim ~/.config/nvim/init.lua' \
+    hyprconf='nvim ~/.config/hypr' \
+    waybarconf='nvim ~/.config/waybar'
 
 # Home server
 alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
