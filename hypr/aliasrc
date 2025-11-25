@@ -13,6 +13,8 @@ alias \
     brc='source ~/.bashrc' \
     logout='hyprctl dispatch exit' \
     cls='clear' \
+    powoff='systemctl poweroff' \
+    reboot='systemctl reboot' \
 
 # My navigation aliases
 alias \
