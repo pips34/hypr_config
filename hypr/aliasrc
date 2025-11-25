@@ -35,10 +35,11 @@ alias \
     shows='cd /media/famvq/Shows' \
     videos='cd /media/famvq/Videos' \
 
-# Setup bashrc
+# Setup rc files
 alias \
     balias.e='nvim ~/.config/hypr/aliasrc' \
     benv.e='nvim ~/.config/hypr/envs.conf' \
+    nvimrc='nvim ~/.config/nvim/init.lua' \
 
 # Home server
 alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
