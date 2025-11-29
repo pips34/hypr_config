@@ -9,6 +9,7 @@ mkdir -p "$BACKUP_DIR"
 rsync -av --delete "$HOME/.config/hypr/" "$BACKUP_DIR/hypr/"
 rsync -av --delete "$HOME/.config/waybar/" "$BACKUP_DIR/waybar/"
 rsync -av --delete "$HOME/.config/walker/" "$BACKUP_DIR/walker/"
+rsync -av --delete "$HOME/.config/elephant/" "$BACKUP_DIR/elephant/"
 
 cd "$BACKUP_DIR"
 git add .
