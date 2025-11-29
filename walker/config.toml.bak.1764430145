@@ -14,15 +14,12 @@ quick_activate = []
 next = ["Down", "ctrl j"]
 previous = ["Up", "ctrl k"]
 
-[columns]
-symbols = 1 # providers to be queried by default
-
 [providers]
 max_results = 256 # 256 should be enough for everyone
 default = [
   "desktopapplications",
   "websearch",
-]
+] # providers to be queried by default
 
 [[providers.prefixes]]
 prefix = "/"
@@ -47,3 +44,14 @@ provider = "websearch"
 [[providers.prefixes]]
 prefix = "$"
 provider = "clipboard"
+
+# [builtins.websearch]
+# name = "websearch"
+# icon = "applications-internet"
+# placeholder = "websearch"
+# keep_selection = true
+#
+# [[builtins.websearch.entries]]
+# name = "DuckDuckGo"
+# url = "https://www.duckduckgo.com/?q=%TERM%"
+# switcher_only = true
