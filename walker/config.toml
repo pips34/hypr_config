@@ -44,3 +44,13 @@ provider = "websearch"
 [[providers.prefixes]]
 prefix = "$"
 provider = "clipboard"
+
+[builtins.websearch]
+name = "websearch"
+icon = "applications-internet"
+placeholder = "websearch"
+keep_selection = true
+
+[[builtins.websearch.entries]]
+name = "DuckDuckGo"
+url = "https://www.duckduckgo.com/?t=ffab&q=%TERM%&ia=web"
