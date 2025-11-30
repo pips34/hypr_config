@@ -6,7 +6,7 @@ BACKUP_DIR="$HOME/.config/backup/"
 cd $BACKUP_DIR
 git pull
 
-rsync -av --delete "$BACKUP_DIR/hypr/" "$HOME/.config/hypr/"
-rsync -av --delete "$BACKUP_DIR/waybar/" "$HOME/.config/waybar/"
-rsync -av --delete "$BACKUP_DIR/walker/" "$HOME/.config/walker/"
-rsync -av --delete "$BACKUP_DIR/elephant/" "$HOME/.config/elephant/"
+rsync -av "$BACKUP_DIR/hypr/" "$HOME/.config/hypr/"
+rsync -av "$BACKUP_DIR/waybar/" "$HOME/.config/waybar/"
+rsync -av "$BACKUP_DIR/walker/" "$HOME/.config/walker/"
+rsync -av "$BACKUP_DIR/elephant/" "$HOME/.config/elephant/"
