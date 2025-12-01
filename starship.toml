@@ -34,3 +34,6 @@ deleted    = ""
 [python]
 format = '\($virtualenv\) '
 python_binary = 'python'
+detect_extensions = []
+detect_files = []
+detect_folders = []
