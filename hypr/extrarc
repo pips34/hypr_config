@@ -1,32 +1,3 @@
-# Adds (.venv) when a Python virtual environment is active
-__venv_fix_prompt() {
-    local p="$PS1"
-
-    local prefix=""
-    local rest="$p"
-
-    while [[ "$rest" =~ ^(\[[^]]*\])*\\\[.*?\\\] ]]; do
-        prefix="$prefix${BASH_REMATCH[0]}"
-        rest="${rest#${BASH_REMATCH[0]}}"
-    done
-
-    case "$rest" in
-        \(*\)\ *) rest="${rest#*\) }" ;;
-    esac
-
-    if [[ -n "$VIRTUAL_ENV" ]]; then
-        rest="($(basename "$VIRTUAL_ENV")) $rest"
-    fi
-
-    PS1="$prefix$rest"
-}
-
-if [[ -n "$PROMPT_COMMAND" ]]; then
-    PROMPT_COMMAND="$PROMPT_COMMAND; __venv_fix_prompt"
-else
-    PROMPT_COMMAND="__venv_fix_prompt"
-fi
-
 # Adds my scripts folder to path
 export PATH="$HOME/.config/hypr/scripts:$PATH"
 
