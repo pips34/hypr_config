@@ -15,7 +15,7 @@ cp ~/.config/starship.toml "$BACKUP_DIR/"
 cd "$BACKUP_DIR"
 git add .
 
-if ! git diff --cached -quiet; then
+if ! git diff --cached --quiet; then
     git commit -m "Backup $TIMESTAMP"
     git push
 else
