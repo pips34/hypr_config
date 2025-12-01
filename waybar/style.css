@@ -70,6 +70,10 @@ window#waybar {
   min-width: 18px;
 }
 
+#network {
+  padding-right: 14px;
+}
+
 #pulseaudio,
 #wireplumber {
   padding-right: 16px;
