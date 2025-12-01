@@ -31,6 +31,7 @@ staged     = ""
 renamed    = ""
 deleted    = ""
 
+# Needed to show (.venv) when a Python virtualenv is active
 [python]
 format = '\($virtualenv\) '
 python_binary = 'python'
