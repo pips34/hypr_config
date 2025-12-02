@@ -33,14 +33,20 @@ alias \
     h='cd ~' \
     ..='cd ..' \
     ...='cd ../..' \
-    ....='cd ../../../..' \
-    .....='cd ../../../../..' \
+    ....='cd ../../..' \
+    .....='cd ../../../..' \
+
+# Reload stuff
+alias \
+    rl.hypr='hyprctl reload' \
+    rl.walker='omarchy-restart-walker' \
+    rl.idle='omarchy-restart-hypridle' \
 
 # Home server paths
 alias \
     media='cd $MEDIA' \
     famvq='cd $FAMVQ' \
-    f='cd $FAMVQ/Felipe' \
+    felipe='cd $FELIPE' \
     movies='cd $MOVIES' \
     shows='cd $SHOWS' \
     videos='cd $VIDEOS' \
@@ -60,7 +66,6 @@ alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
 alias activate='source .venv/bin/activate'
 
 # Get some help...
-
 alias gethelp="echo 'Stop it, get some help'"
 alias \
     :wq=gethelp \
@@ -70,3 +75,4 @@ alias \
     :qa=gethelp \
     :qall=gethelp \
     :wqa=gethelp \
+    :x=gethelp \
