@@ -1,6 +1,7 @@
 # My directories
 export DOWNL="$HOME/Downloads"
 export DOCS="$HOME/Documents"
+export PERSONAL="$DOCS/Personal"
 export REPOS="$DOCS/Repos"
 export TLF="$REPOS/dags-airflow-telefonica"
 export MEDIA="/media"

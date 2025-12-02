@@ -23,9 +23,12 @@ alias \
     docs='cd $DOCS' \
     repos='cd $REPOS' \
     tlf='cd $TLF' \
-    personal='cd $DOCS/Personal' \
+    personal='cd $PERSONAL' \
     downl='cd $DOWNL' \
     nvc='cd ~/.config/nvim' \
+    config='cd ~/.config' \
+    hypr='cd ~/.config/hypr' \
+    walker='cd ~/.config/walker' \
     b='cd -' \
     h='cd ~' \
     ..='cd ..' \
@@ -35,6 +38,7 @@ alias \
 
 # Home server paths
 alias \
+    media='cd $MEDIA' \
     famvq='cd $FAMVQ' \
     f='cd $FAMVQ/Felipe' \
     movies='cd $MOVIES' \
