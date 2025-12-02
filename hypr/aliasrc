@@ -15,27 +15,31 @@ alias \
     cls='clear' \
     powoff='systemctl poweroff' \
     reboot='systemctl reboot' \
+    cat='bat -p' \
+    ccat='bat' \
 
 # My navigation aliases
 alias \
-    docs='cd ~/Documents' \
-    repos='cd ~/Documents/Repos' \
-    tlf='cd ~/Documents/Repos/dags-airflow-telefonica' \
-    personal='cd ~/Documents/Personal' \
-    downl='cd ~/Downloads' \
+    docs='cd $DOCS' \
+    repos='cd $REPOS' \
+    tlf='cd $TLF' \
+    personal='cd $DOCS/Personal' \
+    downl='cd $DOWNL' \
     nvc='cd ~/.config/nvim' \
     b='cd -' \
     h='cd ~' \
     ..='cd ..' \
     ...='cd ../..' \
+    ....='cd ../../../..' \
+    .....='cd ../../../../..' \
 
 # Home server paths
 alias \
-    famvq='cd /media/famvq' \
-    f='cd /media/famvq/Felipe' \
-    movies='cd /media/famvq/Movies' \
-    shows='cd /media/famvq/Shows' \
-    videos='cd /media/famvq/Videos' \
+    famvq='cd $FAMVQ' \
+    f='cd $FAMVQ/Felipe' \
+    movies='cd $MOVIES' \
+    shows='cd $SHOWS' \
+    videos='cd $VIDEOS' \
 
 # Setup rc files
 alias \

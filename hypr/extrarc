@@ -1,3 +1,14 @@
+# My directories
+export DOWNL="$HOME/Downloads"
+export DOCS="$HOME/Documents"
+export REPOS="$DOCS/Repos"
+export TLF="$REPOS/dags-airflow-telefonica"
+export MEDIA="/media"
+export FAMVQ="$MEDIA/famvq"
+export MOVIES="$FAMVQ/Movies"
+export VIDEOS="$FAMVQ/Videos"
+export SHOWS="$FAMVQ/Shows"
+
 # Adds my scripts folder to path
 export PATH="$HOME/.config/hypr/scripts:$PATH"
 
