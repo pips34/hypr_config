@@ -11,7 +11,6 @@ rsync -av --delete "$HOME/.config/waybar/" "$BACKUP_DIR/waybar/"
 rsync -av --delete "$HOME/.config/walker/" "$BACKUP_DIR/walker/"
 rsync -av --delete "$HOME/.config/elephant/" "$BACKUP_DIR/elephant/"
 cp ~/.config/starship.toml "$BACKUP_DIR/"
-cp ~/.local/share/omarchy/bin/omarchy-cmd-screensaver "$BACKUP_DIR"
 
 cd "$BACKUP_DIR"
 git add .
