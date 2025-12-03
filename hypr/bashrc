@@ -1,0 +1,3 @@
+# My own aliasrc and env variables
+source ~/.config/hypr/envrc
+source ~/.config/hypr/aliasrc

@@ -10,6 +10,7 @@ export FELIPE="$FAMVQ/Felipe"
 export MOVIES="$FAMVQ/Movies"
 export VIDEOS="$FAMVQ/Videos"
 export SHOWS="$FAMVQ/Shows"
+export TOSHIBA="/media/Toshiba"
 
 # Adds my scripts folder to path
 export PATH="$HOME/.config/hypr/scripts:$PATH"
