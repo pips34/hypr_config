@@ -25,7 +25,9 @@ window#waybar {
 }
 
 .modules-right {
-  margin-right: 8px;
+  background-color: @background;
+  border-radius: 9999px;
+  margin-right: 16px;
 }
 
 .pill {
@@ -39,7 +41,6 @@ window#waybar {
   background-color: @background;
   margin-left: 9px;
   border-radius: 9999px;
-  opacity: 1;
 }
 
 #workspaces button {
@@ -60,7 +61,14 @@ window#waybar {
 #pulseaudio,
 #tray,
 #bluetooth,
-#network,
+#network {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: @background;
+  margin: 0 2px;
+  min-width: 18px;
+}
+
 #custom-omarchy,
 #custom-update,
 #custom-screenrecording-indicator,
@@ -74,7 +82,6 @@ window#waybar {
 }
 
 #tray-expander {
-  margin-right: 6px;
   border-radius: 9999px;
   background-color: @background;
 }
@@ -123,7 +130,6 @@ menu menuitem:hover {
 }
 
 /* Removes the ugly border around the right click menu on tray items */
-/* Thanks ChatGPT */
 window.popup,
 window.menu,
 .window-frame,

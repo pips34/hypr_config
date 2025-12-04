@@ -8,13 +8,13 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
-    // "group/tray-expander",
+    "group/tray-expander",
+    // "tray",
     "bluetooth",
     "network",
     "pulseaudio",
     "cpu",
-    // "battery",
-    "tray"
+    "battery",
   ],
   "tray": {
     "icon-size": 18,
