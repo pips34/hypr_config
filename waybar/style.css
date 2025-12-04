@@ -35,17 +35,20 @@ window#waybar {
   margin: 0 6px;
 }
 
-#workspaces button {
-  all: unset;
-  padding: 4px 12px;
-  margin: 0 4px;
-  border-radius: 9999px;
+#workspaces {
   background-color: @background;
+  margin-left: 9px;
+  border-radius: 9999px;
+  opacity: 1;
+}
+
+#workspaces button {
+  border-radius: 9999px;
   color: @foreground;
 }
 
 #workspaces button.empty {
-  opacity: 0.45;
+  opacity: 0.25;
 }
 
 #workspaces button.active {
@@ -70,8 +73,14 @@ window#waybar {
   min-width: 18px;
 }
 
+#tray-expander {
+  margin-right: 9px;
+  border-radius: 9999px;
+  background-color: @background;
+}
+
 #custom-omarchy {
-  padding-right: 16px;
+  padding-right: 15px;
 }
 
 #network {
@@ -100,10 +109,13 @@ tooltip {
   background-color: @background;
   color: @foreground;
   padding: 6px 10px;
+  border-radius: 6px;
 }
 
 menu {
   background-color: @background;
+  border-radius: 6px;
+  border: 0px;
 }
 
 menu menuitem:hover {
