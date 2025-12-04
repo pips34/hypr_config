@@ -52,7 +52,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 #cpu,
@@ -115,10 +115,21 @@ tooltip {
 menu {
   background-color: @background;
   border-radius: 6px;
-  border: 0px;
 }
 
 menu menuitem:hover {
   background-color: rgba(255, 255, 255, 0.06);
   color: @foreground;
+}
+
+/* Removes the ugly border around the right click menu on tray items */
+/* Thanks ChatGPT */
+window.popup,
+window.menu,
+.window-frame,
+menu > window,
+menu > decoration,
+decoration {
+  border: 0;
+  box-shadow: none;
 }
