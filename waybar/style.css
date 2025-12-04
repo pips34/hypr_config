@@ -39,7 +39,7 @@ window#waybar {
 
 #workspaces {
   background-color: @background;
-  margin-left: 9px;
+  margin-left: 6px;
   border-radius: 9999px;
 }
 
