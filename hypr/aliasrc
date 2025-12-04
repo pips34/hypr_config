@@ -41,6 +41,7 @@ alias \
     rl.hypr='hyprctl reload' \
     rl.walker='omarchy-restart-walker' \
     rl.idle='omarchy-restart-hypridle' \
+    rl.waybar='omarchy-restart-waybar' \
 
 # Home server paths
 alias \
