@@ -74,7 +74,7 @@ window#waybar {
 }
 
 #tray-expander {
-  margin-right: 9px;
+  margin-right: 6px;
   border-radius: 9999px;
   background-color: @background;
 }
