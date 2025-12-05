@@ -20,8 +20,8 @@ window#waybar {
 }
 
 /* .modules-center { */
-/*   margin-left: 8px; */
-/*   margin-right: 8px; */
+/*   margin-left: 16px; */
+/*   margin-right: 16px; */
 /* } */
 
 .modules-right {
@@ -79,6 +79,11 @@ window#waybar {
   background-color: @background;
   margin: 0 6px;
   min-width: 18px;
+}
+
+#clock {
+  padding-left: 20px;
+  padding-right: 18px;
 }
 
 #tray-expander {
