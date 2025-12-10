@@ -16,5 +16,5 @@ export TOSHIBA="/media/Toshiba"
 export PATH="$HOME/.config/hypr/scripts:$PATH"
 
 # Home server env variables
-export HSIP="192.168.1.10"
+export HSIP="192.168.1.14"
 export HSPK="~/.keys/lenovo-server.pem"
