@@ -13,7 +13,6 @@
 }
 
 window#waybar {
-  background: @backg;
   box-shadow: none;
 }
 
