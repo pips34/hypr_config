@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+
+import pathlib
+import shutil
+import os
+
+_supported_img_formats = [
+    "png",
+    "jpg",
+    "jpeg",
+    "webp",
+]
+
+def _isimg(path: pathlib.Path) -> bool:
+    for format in _supported_img_formats:
+        if path.as_posix().endswith(f".{format}"):
+            return True
+    return False
+
+_wallpapers_env_path = os.environ.get("WALLPAPERS")
+_wallpapers_path = pathlib.Path(_wallpapers_env_path) if _wallpapers_env_path else pathlib.Path("/home/felipe/Pictures/MyWallpapers/")
+_wallpaper_dir = pathlib.Path(_wallpapers_path)
+_wallpaper_dir_content: list[str] = [dir_name.as_posix() for dir_name in _wallpaper_dir.iterdir() if _isimg(dir_name)]
+_images = [pathlib.Path(dir_content) for dir_content in _wallpaper_dir_content]
+
+_themes_dir = pathlib.Path("/home/felipe/.config/omarchy/themes/")
+
+for theme_dir in _themes_dir.iterdir():
+    for img in _images:
+        filepath: pathlib.Path = _wallpaper_dir.absolute() / img
+        dest_path: pathlib.Path = theme_dir / "backgrounds"
+        print(f"Copying: {filepath} -> {dest_path}")
+        shutil.copy2(filepath, dest_path)

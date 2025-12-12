@@ -25,6 +25,7 @@ alias \
     tlf='cd $TLF' \
     personal='cd $PERSONAL' \
     downl='cd $DOWNL' \
+    wallpapers='cd $WALLPAPERS' \
     nvc='cd ~/.config/nvim' \
     config='cd ~/.config' \
     hypr='cd ~/.config/hypr' \
