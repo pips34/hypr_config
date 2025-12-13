@@ -1,5 +1,8 @@
 @import '../omarchy/current/theme/waybar.css';
 
+@define-color foreground #faf4ed;
+@define-color background #990000;
+
 * {
   background-color: transparent;
   color: @foreground;
