@@ -20,11 +20,6 @@ window#waybar {
   margin-left: 3px;
 }
 
-/* .modules-center { */
-/*   margin-left: 16px; */
-/*   margin-right: 16px; */
-/* } */
-
 .modules-right {
   background-color: @background;
   border-radius: 9999px;
