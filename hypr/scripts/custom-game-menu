@@ -1,10 +1,47 @@
 #!/bin/bash
 
-apps=$(grep -rl "Categories=.*Game" \
-  ~/.local/share/applications \
-  /usr/share/applications 2>/dev/null)
+set -euo pipefail
 
-printf "%s\n" "$apps" \
-  | sed 's#.*/##;s#.desktop##' \
-  | sort -f \
-  | omarchy-launch-walker --dmenu -p "Games..."
+# Collect game desktop files
+mapfile -t apps < <(
+  grep -rl "Categories=.*Game" \
+    ~/.local/share/applications \
+    /usr/share/applications 2>/dev/null
+)
+
+# Build "LABEL<TAB>ID" entries
+entries=$(
+  for app in "${apps[@]}"; do
+    id="$(basename "$app" .desktop)"
+
+    if [[ "$id" == "steam" ]]; then
+      # Steam: pretty name, icon, force to top
+      printf "0\t  Steam\tsteam\n"
+    else
+      # Default: title-case the ID a bit, keep sortable weight
+      label="$(printf "%s" "$id" | sed 's/-/ /g')"
+      printf "1\t%s\t%s\n" "$label" "$id"
+    fi
+  done
+)
+
+# Show menu
+selection=$(
+  printf "%s" "$entries" \
+    | sort -t$'\t' -k1,1 -k2,2f \
+    | cut -f2-3 \
+    | awk -F'\t' '{ print $1 }' \
+    | omarchy-launch-walker --dmenu -p "Games..."
+)
+
+# Exit if cancelled
+[[ -z "$selection" ]] && exit 0
+
+# Map selection back to desktop ID
+desktop_id=$(
+  printf "%s" "$entries" \
+    | awk -F'\t' -v sel="$selection" '$2 == sel { print $3 }'
+)
+
+# Launch explicitly
+exec gtk-launch "$desktop_id"

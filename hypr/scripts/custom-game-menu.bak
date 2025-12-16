@@ -1,0 +1,10 @@
+#!/bin/bash
+
+apps=$(grep -rl "Categories=.*Game" \
+  ~/.local/share/applications \
+  /usr/share/applications 2>/dev/null)
+
+printf "%s\n" "$apps" \
+  | sed 's#.*/##;s#.desktop##' \
+  | sort -f \
+  | omarchy-launch-walker --dmenu -p "Games..."
