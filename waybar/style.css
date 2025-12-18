@@ -1,6 +1,6 @@
 @import '../omarchy/current/theme/waybar.css';
 
-@define-color foreground white;
+/* @define-color foreground white; */
 
 * {
   background-color: transparent;
