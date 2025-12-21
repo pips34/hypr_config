@@ -43,6 +43,7 @@ alias \
     rl.walker='omarchy-restart-walker' \
     rl.idle='omarchy-restart-hypridle' \
     rl.waybar='omarchy-restart-waybar' \
+    rl.mako='makoctl reload' \
 
 # Home server paths
 alias \

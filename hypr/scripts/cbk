@@ -12,6 +12,7 @@ rsync -av --delete "$HOME/.config/walker/" "$BACKUP_DIR/walker/"
 rsync -av --delete "$HOME/.config/elephant/" "$BACKUP_DIR/elephant/"
 rsync -av --delete "$HOME/.config/mako/" "$BACKUP_DIR/mako/"
 rsync -av --delete "$HOME/.config/omarchy/themes/aether/" "$BACKUP_DIR/themes/aether/"
+rsync -av --delete "$HOME/.config/swayosd/" "$BACKUP_DIR/swayosd/"
 cp ~/.config/starship.toml "$BACKUP_DIR/"
 
 cd "$BACKUP_DIR"
