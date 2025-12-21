@@ -1,5 +1,8 @@
 @import '../omarchy/current/theme/waybar.css';
 
+/* @define-color foreground white; */
+/* @define-color background black; */
+
 * {
   background-color: transparent;
   color: @foreground;
@@ -11,21 +14,17 @@
 }
 
 window#waybar {
-  background: transparent;
   box-shadow: none;
 }
 
 .modules-left {
-  margin-left: 8px;
-}
-
-.modules-center {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 3px;
 }
 
 .modules-right {
-  margin-right: 8px;
+  background-color: @background;
+  border-radius: 9999px;
+  margin-right: 10px;
 }
 
 .pill {
@@ -35,21 +34,23 @@ window#waybar {
   margin: 0 6px;
 }
 
-#workspaces button {
-  all: unset;
-  padding: 4px 12px;
-  margin: 0 4px;
-  border-radius: 9999px;
+#workspaces {
   background-color: @background;
+  margin-left: 6px;
+  border-radius: 9999px;
+}
+
+#workspaces button {
+  border-radius: 9999px;
   color: @foreground;
 }
 
 #workspaces button.empty {
-  opacity: 0.45;
+  opacity: 0.25;
 }
 
 #workspaces button.active {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 
 #cpu,
@@ -57,7 +58,14 @@ window#waybar {
 #pulseaudio,
 #tray,
 #bluetooth,
-#network,
+#network {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: @background;
+  margin: 0 2px;
+  min-width: 18px;
+}
+
 #custom-omarchy,
 #custom-update,
 #custom-screenrecording-indicator,
@@ -68,6 +76,16 @@ window#waybar {
   background-color: @background;
   margin: 0 6px;
   min-width: 18px;
+}
+
+#clock {
+  padding-left: 20px;
+  padding-right: 18px;
+}
+
+#tray-expander {
+  border-radius: 9999px;
+  background-color: @background;
 }
 
 #custom-omarchy {
@@ -100,13 +118,26 @@ tooltip {
   background-color: @background;
   color: @foreground;
   padding: 6px 10px;
+  border-radius: 6px;
 }
 
 menu {
   background-color: @background;
+  border-radius: 6px;
 }
 
 menu menuitem:hover {
   background-color: rgba(255, 255, 255, 0.06);
   color: @foreground;
+}
+
+/* Removes the ugly border around the right click menu on tray items */
+window.popup,
+window.menu,
+.window-frame,
+menu > window,
+menu > decoration,
+decoration {
+  border: 0;
+  box-shadow: none;
 }

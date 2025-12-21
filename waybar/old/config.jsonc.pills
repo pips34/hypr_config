@@ -1,19 +1,20 @@
 {
   "reload_style_on_change": true,
-  "layer": "top",
+  "layer": "bottom",
   "position": "top",
   "spacing": 0,
-  "height": 24,
+  "height": 28,
   "margin-top": 6,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
+    // "tray",
     "bluetooth",
     "network",
     "pulseaudio",
     "cpu",
-    "battery"
+    "battery",
   ],
   "tray": {
     "icon-size": 18,
@@ -51,7 +52,7 @@
   },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\uf303</span>",  // Arch logo
-    "on-click": "omarchy-menu",
+    "on-click": "~/.config/hypr/scripts/omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
@@ -70,8 +71,8 @@
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
-    "format": "{:L%A %d, %I:%M %p}",
-    "format-alt": "{:L%d %B W%V %Y}",
+    "format": "{:L%a %d, %I:%M %p}",
+    "format-alt": "{:L%B W%V %Y, UTC%Z}",
     "tooltip": false,
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
