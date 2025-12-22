@@ -3,6 +3,9 @@
 /* @define-color foreground white; */
 /* @define-color background black; */
 
+@define-color background #000815;
+@define-color foreground #D16767;
+
 * {
   background-color: transparent;
   color: @foreground;
