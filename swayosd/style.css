@@ -1,7 +1,10 @@
 @import '../omarchy/current/theme/swayosd.css';
 
+@define-color foreground #EE9FA2;
+
 window {
   border-radius: 12px;
+  border-color: @foreground;
   opacity: 0.97;
   border: 2px solid @border-color;
 
