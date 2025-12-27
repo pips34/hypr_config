@@ -1,14 +1,23 @@
 @import '../omarchy/current/theme/swayosd.css';
 
-@define-color foreground #EE9FA2;
+@define-color border-color #EE9FA2;
 
 window {
   border-radius: 12px;
+  border: 1px solid @border-color;
   border-color: @foreground;
   opacity: 0.97;
-  border: 2px solid @border-color;
 
   background-color: @background-color;
+}
+
+.osd,
+osd,
+osd {
+  background-color: alpha(@background-color, 0.4);
+  border: 1px solid @border-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 label {
