@@ -1,6 +1,7 @@
 @import '../omarchy/current/theme/swayosd.css';
 
-@define-color border-color #EE9FA2;
+/* @define-color border-color #EE9FA2; */
+@define-color border-color #A1CAFE;
 
 window {
   border-radius: 12px;
