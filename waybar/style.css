@@ -4,8 +4,7 @@
 /* @define-color background black; */
 
 @define-color background #000815;
-/* @define-color foreground #EE9FA2; */
-@define-color foreground #24DCFE;
+@define-color foreground #EE9FA2;
 
 * {
   background-color: transparent;
