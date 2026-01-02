@@ -1,11 +1,10 @@
 @import '../omarchy/current/theme/waybar.css';
 
-/* @define-color foreground white; */
-/* @define-color background black; */
-/* @define-color foreground #EE9FA2; */
+/* @define-color background #000815; */
+/* @define-color foreground #A1CAFE; */
 
-@define-color background #000815;
-@define-color foreground #A1CAFE;
+@define-color foreground #FFFFFF;
+@define-color background #C53D27;
 
 * {
   background-color: transparent;
