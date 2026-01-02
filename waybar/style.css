@@ -3,11 +3,11 @@
 /* @define-color background #000815; */
 /* @define-color foreground #A1CAFE; */
 
-/* @define-color foreground white; */
+@define-color foreground white;
 /* @define-color background #8F2A1B; */
 
 @define-color background #8F2A1B;
-@define-color foreground #DFA237;
+/* @define-color foreground #DFA237; */
 
 * {
   background-color: transparent;
@@ -84,20 +84,21 @@ window#waybar {
   min-width: 18px;
 }
 
-/* Make the font color for center and right items white */
-#custom-update,
-#custom-screenrecording-indicator,
-#custom-expand-icon,
-#clock,
-#tray-expander,
-#cpu,
-#battery,
-#pulseaudio,
-#tray,
-#bluetooth,
-#network {
-  color: white;
-}
+/* /* Make the font color for center and right items white */
+*/
+/* #custom-update, */
+/* #custom-screenrecording-indicator, */
+/* #custom-expand-icon, */
+/* #clock, */
+/* #tray-expander, */
+/* #cpu, */
+/* #battery, */
+/* #pulseaudio, */
+/* #tray, */
+/* #bluetooth, */
+/* #network { */
+/*   color: white; */
+/* } */
 
 #clock {
   padding-left: 20px;
