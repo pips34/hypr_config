@@ -2,6 +2,7 @@
 export DOWNL="$HOME/Downloads"
 export DOCS="$HOME/Documents"
 export PERSONAL="$DOCS/Personal"
+export APPS="$DOCS/Apps"
 export REPOS="$DOCS/Repos"
 export TLF="$REPOS/dags-airflow-telefonica"
 export WALLPAPERS="$HOME/Pictures/MyWallpapers"
