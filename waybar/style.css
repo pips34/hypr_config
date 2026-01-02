@@ -3,8 +3,11 @@
 /* @define-color background #000815; */
 /* @define-color foreground #A1CAFE; */
 
-@define-color foreground white;
+/* @define-color foreground white; */
+/* @define-color background #8F2A1B; */
+
 @define-color background #8F2A1B;
+@define-color foreground #DFA237;
 
 * {
   background-color: transparent;
