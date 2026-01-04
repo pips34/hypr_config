@@ -52,7 +52,7 @@
   },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\uf303</span>",  // Arch logo
-    "on-click": "omarchy-menu",
+    "on-click": "~/.config/hypr/scripts/omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
