@@ -4,158 +4,90 @@
 @define-color background #041F3C;
 
 * {
-  background-color: transparent;
+  background-color: @background;
   color: @foreground;
+
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
+  font-family: 'JetBrainsMono Nerd Font';
   font-size: 12px;
 }
 
-window#waybar {
-  box-shadow: none;
-}
-
 .modules-left {
-  margin-left: 3px;
+  margin-left: 8px;
 }
 
 .modules-right {
-  background-color: @background;
-  border-radius: 9999px;
-  margin-right: 10px;
-}
-
-.pill {
-  padding: 4px 12px;
-  border-radius: 9999px;
-  background-color: @background;
-  margin: 0 6px;
-}
-
-#workspaces {
-  background-color: @background;
-  margin-left: 6px;
-  border-radius: 9999px;
+  margin-right: 8px;
 }
 
 #workspaces button {
-  border-radius: 9999px;
-  color: @foreground;
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
 }
 
 #workspaces button.empty {
-  opacity: 0.25;
-}
-
-#workspaces button.active {
-  background-color: rgba(255, 255, 255, 0.12);
+  opacity: 0.5;
 }
 
 #cpu,
 #battery,
 #pulseaudio,
-#tray,
-#bluetooth,
-#network {
-  padding: 4px 12px;
-  border-radius: 9999px;
-  background-color: @background;
-  margin: 0 2px;
-  min-width: 18px;
-}
-
 #custom-omarchy,
-#custom-update,
 #custom-screenrecording-indicator,
-#custom-expand-icon,
-#clock {
-  padding: 4px 12px;
-  border-radius: 9999px;
-  background-color: @background;
-  margin: 0 6px;
-  min-width: 18px;
-}
-
-/* Make the font color for center and right items white */
-#custom-update,
-#custom-screenrecording-indicator,
-#custom-expand-icon,
-#clock,
-#tray-expander,
-#cpu,
-#battery,
-#pulseaudio,
-#tray,
-#bluetooth,
-#network {
-  color: white;
-}
-
-#clock {
-  padding-left: 20px;
-  padding-right: 18px;
-}
-
-#tray-expander {
-  border-radius: 9999px;
-  background-color: @background;
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
 }
 
 #custom-omarchy {
-  padding-right: 14px;
+  margin-right: 12px;
+}
+
+#tray {
+  margin-right: 16px;
+}
+
+#bluetooth {
+  margin-right: 17px;
 }
 
 #network {
-  padding-right: 14px;
+  margin-right: 13px;
 }
 
-#pulseaudio,
-#wireplumber {
-  padding-right: 16px;
-  padding-left: 10px;
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
 }
 
 #custom-update {
   font-size: 10px;
 }
 
+#clock {
+  margin-left: 8.75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 #custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 5px;
   font-size: 10px;
   padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
   color: #a55555;
-}
-
-tooltip {
-  background-color: @background;
-  color: @foreground;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
-
-menu {
-  background-color: @background;
-  border-radius: 6px;
-}
-
-menu menuitem:hover {
-  background-color: rgba(255, 255, 255, 0.06);
-  color: @foreground;
-}
-
-/* Removes the ugly border around the right click menu on tray items */
-window.popup,
-window.menu,
-.window-frame,
-menu > window,
-menu > decoration,
-decoration {
-  border: 0;
-  box-shadow: none;
 }
 
 #custom-voxtype {
