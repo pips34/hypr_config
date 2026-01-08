@@ -123,6 +123,7 @@ window#waybar {
 
 #custom-screenrecording-indicator {
   font-size: 10px;
+  padding-bottom: 1px;
 }
 
 #custom-screenrecording-indicator.active {
@@ -155,4 +156,13 @@ menu > decoration,
 decoration {
   border: 0;
   box-shadow: none;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
 }
