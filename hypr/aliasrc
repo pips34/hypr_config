@@ -25,6 +25,7 @@ alias \
     tlf='cd $TLF' \
     personal='cd $PERSONAL' \
     apps='cd $APPS' \
+    games='cd $GAMES' \
     downl='cd $DOWNL' \
     wallpapers='cd $WALLPAPERS' \
     nvc='cd ~/.config/nvim' \
