@@ -8,7 +8,7 @@
   color: @foreground;
 
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   min-height: 0;
   font-family: 'JetBrainsMono Nerd Font';
   font-size: 12px;
@@ -97,4 +97,9 @@ tooltip {
 
 #custom-voxtype.recording {
   color: #a55555;
+}
+
+menu menuitem:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: @foreground;
 }
