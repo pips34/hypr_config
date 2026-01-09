@@ -1,6 +1,77 @@
 @import '../../../.local/share/omarchy/default/walker/themes/omarchy-default/style.css';
 
+@define-color background     #1f2621;
+@define-color base           #242c26;
+@define-color surface        #2a312c;
+@define-color text           #d6dbc9;
+@define-color muted-text     #aeb4a2;
+@define-color border         #3a423c;
+@define-color accent         #8fa97a;
+@define-color selected       #3b4a3f;
+@define-color selected-text  #e3e8d6;
+
+* {
+  outline: none;
+  box-shadow: none;
+}
+
 .box-wrapper {
-  border-radius: 20px;
-  border-color: #A2AF81;
+  background: alpha(@base, 0.96);
+  border: 2px solid @border;
+  border-radius: 18px;
+}
+
+.search-container {
+  background: @surface;
+  border-radius: 10px;
+}
+
+.input {
+  color: @text;
+}
+
+.input placeholder {
+  color: @muted-text;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+child {
+  border-radius: 12px;
+  margin: 4px 6px;
+}
+
+.item-box {
+  background: transparent;
+  padding-left: 14px;
+}
+
+child:hover {
+  background: alpha(@accent, 0.12);
+}
+
+child:selected {
+  background: @selected;
+  border-radius: 12px;
+}
+
+child:selected * {
+  color: @selected-text;
+}
+
+child:selected,
+child:selected * {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.keybind-hints {
+  background: @surface;
+  color: @muted-text;
+  border-radius: 10px;
 }
