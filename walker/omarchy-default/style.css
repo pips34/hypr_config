@@ -18,7 +18,8 @@
 .box-wrapper {
   background: alpha(@base, 0.96);
   border: 2px solid @border;
-  border-radius: 18px;
+  border-radius: 20px;
+  border-color: #A2AF81;
 }
 
 .search-container {
