@@ -1,0 +1,54 @@
+general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
+
+# Overriding theme
+[colors]
+
+[colors.primary]
+background = "#1f2621"
+foreground = "#d6dbc9"
+
+[colors.normal]
+black   = "#2a312c"
+red     = "#b56b5f"
+green   = "#8fa97a"
+yellow  = "#c9b37e"
+blue    = "#7f9fa6"
+magenta = "#a38aa6"
+cyan    = "#86a89b"
+white   = "#cfd4c2"
+
+[colors.bright]
+black   = "#3a423c"
+red     = "#c97c6f"
+green   = "#9fbc88"
+yellow  = "#dbc88c"
+blue    = "#8fb2ba"
+magenta = "#b49db8"
+cyan    = "#97bfb0"
+white   = "#e3e8d6"
+
+[colors.cursor]
+text   = "#1f2621"
+cursor = "#e3e8d6"
+
+# Rest of the config
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+size = 9
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+
+[keyboard]
+bindings = [
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" }
+]

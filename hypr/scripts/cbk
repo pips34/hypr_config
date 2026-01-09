@@ -14,6 +14,7 @@ rsync -av --delete "$HOME/.config/mako/" "$BACKUP_DIR/mako/"
 rsync -av --delete "$HOME/.config/omarchy/current/theme/mako.ini" "$BACKUP_DIR/mako/config"
 rsync -av --delete "$HOME/.config/omarchy/themes/aether/" "$BACKUP_DIR/themes/aether/"
 rsync -av --delete "$HOME/.config/swayosd/" "$BACKUP_DIR/swayosd/"
+rsync -av --delete "$HOME/.config/alacritty/" "$BACKUP_DIR/alacritty/"
 cp ~/.config/starship.toml "$BACKUP_DIR/"
 
 cd "$BACKUP_DIR"

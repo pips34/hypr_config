@@ -12,5 +12,6 @@ rsync -av "$BACKUP_DIR/walker/" "$HOME/.config/walker/"
 rsync -av "$BACKUP_DIR/elephant/" "$HOME/.config/elephant/"
 rsync -av "$BACKUP_DIR/themes/aether/" "$HOME/.config/omarchy/themes/aether/"
 rsync -av "$BACKUP_DIR/swayosd/" "$HOME/.config/swayosd/"
+rsync -av "$BACKUP_DIR/alacritty/" "$HOME/.config/alacritty/"
 
 mv "$BACKUP_DIR/starship.toml" "$HOME/.config/"
