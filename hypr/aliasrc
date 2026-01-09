@@ -18,6 +18,16 @@ alias \
     cat='bat -p' \
     ccat='bat' \
 
+# Config files
+alias \
+    config='cd $CONFIG' \
+    backup='cd $BACKUP' \
+    hypr='cd $HYPR' \
+    mako='cd $MAKO' \
+    btop='cd $BTOP' \
+    swayosd='cd $SWAYOSD' \
+    alacritty='cd $ALACRITTY' \
+
 # My navigation aliases
 alias \
     docs='cd $DOCS' \
