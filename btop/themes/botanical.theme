@@ -1,0 +1,45 @@
+# -------------------------------------------------
+# btop theme: Botanical Desk
+# Matches Walker + Alacritty palette
+# -------------------------------------------------
+
+# Main background / foreground
+theme[main_bg]="#1f2621"
+theme[main_fg]="#d6dbc9"
+
+# Title / headings
+theme[title]="#c9b37e"
+theme[hi_fg]="#e3e8d6"
+
+# Selected item / cursor
+theme[selected_bg]="#3b4a3f"
+theme[selected_fg]="#e3e8d6"
+
+# Inactive / dim text
+theme[inactive_fg]="#aeb4a2"
+
+# Box borders and dividers
+theme[div_line]="#3a423c"
+theme[box]="#3a423c"
+
+# Graph colors
+theme[proc_cpu]="#8fa97a"
+theme[proc_mem]="#7f9fa6"
+theme[proc_gpu]="#a38aa6"
+
+theme[cpu_graph]="#8fa97a"
+theme[mem_graph]="#7f9fa6"
+theme[net_graph]="#c9b37e"
+theme[proc_graph]="#8fa97a"
+
+# Meter colors
+theme[temp]="#c97c6f"
+theme[bat]="#c9b37e"
+
+# Warnings / alerts
+theme[warn]="#c97c6f"
+theme[crit]="#b56b5f"
+
+# Misc UI
+theme[clock]="#aeb4a2"
+theme[date]="#aeb4a2"
