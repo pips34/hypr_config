@@ -5,11 +5,12 @@
 @define-color surface        #2a312c;
 @define-color text           #d6dbc9;
 @define-color muted-text     #aeb4a2;
-/* @define-color border         #3a423c; */
-@define-color border         #B0A06C;
+@define-color border         #3a423c;
 @define-color accent         #8fa97a;
 @define-color selected       #3b4a3f;
 @define-color selected-text  #e3e8d6;
+
+@define-color border-color   #87B82A;
 
 * {
   outline: none;
@@ -20,7 +21,7 @@
   background: alpha(@base, 0.96);
   border: 2px solid @border;
   border-radius: 20px;
-  border-color: #A2AF81;
+  border-color: @border-color;
 }
 
 .search-container {
