@@ -23,6 +23,7 @@ alias \
     config='cd $CONFIG' \
     backup='cd $BACKUP' \
     hypr='cd $HYPR' \
+    scripts='cd $SCRIPTS' \
     mako='cd $MAKO' \
     btop='cd $BTOP' \
     swayosd='cd $SWAYOSD' \

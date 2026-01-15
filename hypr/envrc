@@ -2,6 +2,7 @@
 export CONFIG="$HOME/.config"
 export BACKUP="$CONFIG/backup"
 export HYPR="$CONFIG/hypr"
+export SCRIPTS="$HYPR/scripts"
 export MAKO="$CONFIG/mako"
 export BTOP="$CONFIG/btop"
 export SWAYOSD="$CONFIG/swayosd"
