@@ -13,7 +13,6 @@ alias \
     brc='source ~/.bashrc' \
     logout='hyprctl dispatch exit' \
     cls='clear' \
-    powoff='systemctl poweroff' \
     reboot='systemctl reboot' \
     cat='bat -p' \
     ccat='bat' \
