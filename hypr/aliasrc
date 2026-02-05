@@ -76,6 +76,7 @@ alias \
     nvimrc='nvim ~/.config/nvim/init.lua' \
     hyprconf='nvim ~/.config/hypr' \
     waybarconf='cd ~/.config/waybar && nvim .' \
+    myconf='cd ~/.config/hypr && nvim myconfig.conf' \
 
 # Home server
 alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
