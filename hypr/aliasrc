@@ -98,3 +98,7 @@ alias \
     :qall=gethelp \
     :wqa=gethelp \
     :x=gethelp \
+
+# This alias is useful to quickly find a file for nvim tree-sitter that gives me an error if left alone, but I need to revert changes to update the plugin :(
+
+alias errornvim='nvim ~/.local/share/nvim/lazy/nvim-treesitter/queries/python/highlights.scm'
