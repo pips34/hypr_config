@@ -86,6 +86,8 @@ alias activate='source .venv/bin/activate'
 # C
 alias \
     zigcc='zig cc -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Wstrict-prototypes -Werror' \
+    ccompile='zig cc -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Wstrict-prototypes -Werror -o cdist/main ' \
+    cexec='cdist/main' \
 
 # Get some help...
 alias gethelp="echo 'Stop it, get some help'"
