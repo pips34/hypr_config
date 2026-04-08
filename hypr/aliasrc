@@ -104,3 +104,7 @@ alias \
 # This alias is useful to quickly find a file for nvim tree-sitter that gives me an error if left alone, but I need to revert changes to update the plugin :(
 
 alias errornvim='nvim ~/.local/share/nvim/lazy/nvim-treesitter/queries/python/highlights.scm'
+
+# Temporary to try out nvim 0.12
+
+alias nvim012='NVIM_APPNAME=nvim-012 ~/opt/nvim-0.12/bin/nvim'
