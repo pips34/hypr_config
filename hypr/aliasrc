@@ -33,6 +33,8 @@ alias \
     docs='cd $DOCS' \
     repos='cd $REPOS' \
     tlf='cd $TLF' \
+    dlers='cd $DLERS' \
+    dlers-logs='cd $DLERS_LOGS' \
     personal='cd $PERSONAL' \
     apps='cd $APPS' \
     games='cd $GAMES' \
@@ -81,7 +83,9 @@ alias \
 alias ssh.hs='ssh -i $HSPK famvq@$HSIP'
 
 # Python
-alias activate='source .venv/bin/activate'
+alias \
+    activate='source .venv/bin/activate' \
+    pyrun='uvicorn app.main:app --reload --app-dir src' \
 
 # C
 alias \
